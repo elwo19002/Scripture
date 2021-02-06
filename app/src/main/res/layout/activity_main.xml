@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.scripture.MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your favorite scripture: "
+        android:id="@+id/lblInstructions"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="29dp"
+        android:id="@+id/txtBook"
+        android:hint="Book"
+        android:layout_below="@+id/lblInstructions"
+        android:layout_alignStart="@+id/lblInstructions"
+        android:layout_alignEnd="@+id/lblInstructions"
+        android:layout_alignLeft="@+id/lblInstructions"
+        android:layout_alignRight="@+id/lblInstructions" />
+    ​
+    ​
+    <EditText
+        android:id="@+id/chapter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblInstructions"
+        android:layout_alignStart="@+id/lblInstructions"
+        android:layout_alignLeft="@+id/lblInstructions"
+        android:layout_alignEnd="@+id/lblInstructions"
+        android:layout_alignRight="@+id/lblInstructions"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginRight="-1dp"
+        android:ems="10"
+        android:hint="Chapter"
+        android:inputType="textPersonName" />
+    ​
+    <EditText
+        android:id="@+id/verse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblInstructions"
+        android:layout_alignStart="@+id/lblInstructions"
+        android:layout_alignLeft="@+id/lblInstructions"
+        android:layout_alignEnd="@+id/lblInstructions"
+        android:layout_alignRight="@+id/lblInstructions"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_marginRight="-5dp"
+        android:ems="10"
+        android:hint="Verse"
+        android:inputType="textPersonName" />
+    ​
+    <Button
+        android:id="@+id/btnDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBook"
+        android:layout_marginTop="131dp"
+        android:onClick="onDisplayScripture"
+        android:text="Display Scripture" />
+    ​
+    <Button
+        android:id="@+id/btnLoadScripture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDisplay"
+        android:layout_marginTop="8dp"
+        android:onClick="onLoadScripture"
+        android:text="Load Scripture" />
+    ​
+    ​
+</RelativeLayout>
